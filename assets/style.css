@@ -333,6 +333,7 @@ p + .block-quote, .block-quote + p {
     position: relative;
     text-align: left;
     line-height: 28px;
+    color: #fff;
 }
 
 .block-quote.quote-2 {
@@ -344,7 +345,6 @@ p + .block-quote, .block-quote + p {
         font: normal normal normal 54px/1 FontAwesome;
         position: absolute;
         left: 2px;
-        color: #ECECEC;
         right: 0;
         display: inline-block;
         text-align: left;
@@ -434,13 +434,6 @@ hr.d {
     height: 3px;
 }
 
-hr.d-dark {
-    background-position: center center;
-    background: url(images/assets/gradient-line-dark.png) no-repeat center;
-    background-size: contain;
-    border: none;
-    height: 3px;
-}
 
 hr.e {
     max-width: 50px;
@@ -617,7 +610,7 @@ body.boxed-layout {
 }
 
 .boxed-layout .overlay-content .section-empty:not(.section-bg-color) {
-    background: #fff !important;
+    background: purple; !important;
 }
 
 .col-center {
@@ -871,6 +864,7 @@ header .btn-default, header .btn, header .anima-button.circle-button, header .in
 
 .navbar-default .navbar-nav > li > a, .mega-menu h5 {
     color: #444;
+     font-size: 20px;
 }
 
 .nav > li.dropdown > a {
@@ -2719,26 +2713,7 @@ BACKGROUND PATTERNS
         background-color: rgba(0,0,0,0.25);
     }
 
-    .bg-overlay.dotted {
-        background-image: url(images/overlay/dotted.png);
-    }
-
-    .bg-overlay.line-45 {
-        background-image: url(images/overlay/line-45.png);
-    }
-
-    .bg-overlay.carbonio {
-        background-image: url(images/overlay/carbonio.png);
-    }
-
-    .bg-overlay.tile {
-        background-image: url(images/overlay/tile.png);
-    }
-
-    .bg-overlay.points {
-        background-image: url(images/overlay/points.png);
-    }
-
+    
     .bg-overlay.transparent-dark {
         background-color: rgba(0,0,0,0.51);
     }
@@ -2747,14 +2722,6 @@ BACKGROUND PATTERNS
         background-color: rgba(255,255,255,0.7);
     }
 
-    .bg-overlay.squares {
-        background-image: url(images/overlay/squares.png);
-    }
-
-    .bg-overlay.tv {
-        background-image: url(images/overlay/tv.gif);
-        opacity: .1;
-    }
 
 .overlay-container, .bg-gradient-container {
     position: relative;
@@ -4672,6 +4639,7 @@ IMAGE BOX
     outline: none !important;
     position: relative;
     text-align: left;
+    height: 200px;
 }
 
     .img-box.thumbnail .caption {
@@ -5146,6 +5114,7 @@ EMPTY - IMAGE - VIDEO - SLIDER
 ------------------------------
 */
 
+
 .container .container {
     padding-left: 0;
     padding-right: 0;
@@ -5166,7 +5135,16 @@ div.content {
     }
 
 .section-empty, .footer-parallax-container.bg-color, .footer-parallax-container > .content {
-    background-color: #FFF;
+    background-color: purple;
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.section-empty-about, .footer-parallax-container.bg-color, .footer-parallax-container > .content {
+    background-image:url('../images/home/12.jpg');
+     background-repeat: no-repeat; 
+     background-position: center;
     position: relative;
     z-index: 3;
     overflow: hidden;
@@ -5188,11 +5166,24 @@ div.content {
     background-repeat: no-repeat;
     overflow: hidden;
 }
+.section-bg-image-contact {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-image: url('../images/background/contact.jpg');
+    color: #000;
+}
 
 .section-bg-video {
     overflow: hidden;
     position: relative;
     overflow: hidden;
+    background-image: url('../images/background/image.jpg'); background-repeat: no-repeat;background-position: top;
+}
+
+.gif {
+   height: 50px;
 }
 
 .section-custom {
@@ -5278,6 +5269,7 @@ SECTION TWO BLOCKS
     .section-two-blocks > .row > .col-md-6:last-child .content, .section-two-blocks > .row > .col-md-5 .content {
         padding-right: 0;
         padding-left: 50px;
+        color: #fff;
     }
 
     .section-two-blocks.blocks-right > .row > .col-md-5 .content, .section-two-blocks.blocks-right > .row > .col-md-6:last-child .content {
@@ -5393,6 +5385,7 @@ SECTION TWO BLOCKS
     background: #fff;
     margin-top: 25px;
     margin-bottom: 25px;
+
 }
 
     .two-blocks-container > .row {
@@ -5753,6 +5746,8 @@ img.alignright {
     float: right;
     margin: 0.4211em 0 1.6842em 1.6842em;
 }
+
+
 
 .container > .wp-post-image {
     margin-bottom: 15px;
@@ -7217,6 +7212,8 @@ VARIOUS
     .section-two-blocks .row > div > a.img-box {
         display: block;
     }
+
+
 
     .proporzional-row, .proporzional-row > .row {
         display: block !important;

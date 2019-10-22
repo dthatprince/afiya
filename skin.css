@@ -123,11 +123,11 @@ body div.boxed-border.border-yellow {
 
 body, .adv-img p, .caption-bottom p, .adv-circle .caption p, .advs-box p, .pricing-table .list-group-item, a, .list-items .list-item p, .tab-box .nav-tabs > li > a span, div.caption-bottom p,
 .header-base:not(.white) p, .title-base p, div.title-icon p {
-    color: #8492af;
+    color: #fff;
 }
 
 .img-box.inner .caption {
-    color: #8492af !important;
+    color: #000 !important;
 }
 
 header.menu-transparent .navbar-default .navbar-nav > .active > a, header.menu-transparent .navbar-default .navbar-nav > li:hover > a, .white .advs-box h4, .white .navbar-nav > .active > a, .white .navbar-nav > .active > a:hover,
@@ -149,6 +149,11 @@ header.menu-transparent .navbar-default .navbar-nav > .active > a, header.menu-t
 header.menu-transparent .nav .caret:before, footer .tag-row span {
     border-color: #8492af;
 }
+
+.header-p {
+    font-size: 15pt;
+}
+
 
 .btn-border {
     border-color: rgba(142,136,175,0.35);
@@ -532,8 +537,10 @@ h1, .h1 {
 }
 
 .text-m {
-    font-size: 17px !important;
+    font-size: 20px !important;
+    color: #fff;
 }
+
 
 .text-l {
     line-height: 38px;
@@ -633,6 +640,7 @@ h2, .h2 {
 h3, .h3 {
     font-size: 36px;
     line-height: 40px;
+    color: #fff;
 }
 
     h1 + p, h3 + p, h4 + p, h1 + h2, h1 + h3, p + .btn {
@@ -695,6 +703,7 @@ HEADER AND MENUS
     width: 100%;
 }
 
+
 .navbar-inner:not(.ms-rounded) li {
     position: relative;
 }
@@ -702,6 +711,7 @@ HEADER AND MENUS
 .nav.inner.ms-rounded.over > li {
     padding-bottom: 50px;
 }
+
 
 .navbar-inner:not(.ms-rounded) li > a:before {
     content: '';
@@ -1055,6 +1065,7 @@ footer p, footer a, footer li {
 footer a {
     line-height: 25px;
 }
+
 
 footer h3 {
     font-weight: 500;
