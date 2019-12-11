@@ -5135,7 +5135,7 @@ div.content {
     }
 
 .section-empty, .footer-parallax-container.bg-color, .footer-parallax-container > .content {
-    background-color: purple;
+    background-color: #362132;
     position: relative;
     z-index: 3;
     overflow: hidden;
